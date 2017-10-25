@@ -1,0 +1,12 @@
+{
+  "name": "TravisTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kyler-hyuna/TravisTest.git",
+  "author": "Kyle Roach <kyle.roach@hyuna.bb>",
+  "license": "MIT",
+  "scripts": {
+    "staging": "echo staging",
+    "prod": "echo prod"
+  }
+}
