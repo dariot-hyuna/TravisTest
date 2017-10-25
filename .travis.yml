@@ -8,4 +8,4 @@ install:
 
 script:
  - if [ "$TRAVIS_BRANCH" = "staging" ]; then yarn run staging; fi
- - if [ "$TRAVIS_BRANCH" = "prod" ]; then yarn run prod; fi
+ - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn run prod; fi
