@@ -6,7 +6,9 @@
   "author": "Kyle Roach <kyle.roach@hyuna.bb>",
   "license": "MIT",
   "scripts": {
-    "staging": "echo staging",
-    "prod": "echo prod"
+    "staging": "echo 'Staging PR'",
+    "staging:complete": "echo 'Staging complete'",
+    "prod": "echo 'Prod PR'",
+    "prod:complete": "echo 'Prod complete'"
   }
 }

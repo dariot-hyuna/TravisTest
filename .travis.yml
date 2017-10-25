@@ -7,5 +7,7 @@ install:
  - yarn
 
 script:
- - if [ "$TRAVIS_BRANCH" = "staging" ]; then yarn run staging; fi
- - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn run prod; fi
+ - if [ "$TRAVIS_PULL_REQUEST_BRANCH" = "staging" ]; then yarn run staging; fi
+ - if [ "$TRAVIS_BRANCH" = "staging" ]; then yarn run staging:complete; fi
+ - if [ "$TRAVIS_PULL_REQUEST_BRANCH" = "master" ]; then yarn run prod; fi
+ - if [ "$TRAVIS_BRANCH" = "master" ]; then yarn run prod:complete; fi
